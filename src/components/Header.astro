@@ -6,7 +6,7 @@ import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
   id="header"
   class="fixed py-5 flex items-center top-0 left-0 right-0 z-50"
 >
-  <nav class="lg:flex justify-between items-center mx-auto container">
+  <div class="lg:flex justify-between items-center mx-auto container">
     <Astronav closeOnClick>
       <div class="flex px-2 w-full lg:w-auto justify-between items-center">
         <div class="logo">
@@ -22,8 +22,8 @@ import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
           <MenuIcon class="w-6 h-6 text-gray-800" />
         </div>
       </div>
-      <MenuItems class="hidden lg:flex px-2">
-        <ul class="flex flex-col lg:flex-row lg:gap-5">
+      <MenuItems class="hidden navbar lg:flex px-2">
+        <ul class="flex flex-col lg:flex-row">
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
@@ -31,7 +31,7 @@ import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
         </ul>
       </MenuItems>
     </Astronav>
-  </nav>
+  </div>
 </header>
 <script>
   document.addEventListener("DOMContentLoaded", () => {
@@ -57,16 +57,43 @@ import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
     transition: all 0.5s;
     background: #fff;
   }
-  nav ul li a {
-    font-size: 15px;
-    line-height: 23px;
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
   }
+  .navbar li {
+    position: relative;
+  }
+  .navbar a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 30px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #555555;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+  .navbar a:hover {
+    color: #14279b;
+  }
+
+  .navbar .contact-info:hover{
+    background-color: #0d6efd;
+    color: #fff;
+  }
+
   .raleway-font {
     font-family: "Raleway", sans-serif;
   }
-  .contact-info {
+  .navbar .contact-info {
     background: #14279b;
     padding: 8px 25px;
+    margin-left: 30px;
     border-radius: 50px;
     color: #fff;
   }
