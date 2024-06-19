@@ -1,0 +1,91 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<section
+  class="flex flex-wrap items-center overflow-hidden py-14"
+  data-aos="fade-up"
+>
+  <div
+    class="lg:w-5/12 w-full h-auto flex items-stretch justify-center xl:justify-start"
+    data-aos="fade-right"
+    data-aos-delay="150"
+  >
+    <img
+      src="/src/content/posts/images/counts-img.png"
+      class="max-w-full h-auto"
+    />
+  </div>
+  <div
+    class="lg:w-7/12 w-full h-auto pt-4 xl:pt-0 items-stretch"
+    data-aos="fade-right"
+    data-aos-delay="300"
+  >
+    <div class="flex flex-wrap mx-3">
+      <div class="md:w-1/2 w-full shrink-0 md:items-stretch md:flex">
+        <div class="count-box" data-aos="fade-up" data-aos-delay="100">
+          <Icon class="icon" name="bi:emoji-smile" />
+          <span class="counter">3835039</span>
+          <p><strong>Organic Reach</strong> (Global)</p>
+        </div>
+      </div>
+      <div class="md:w-1/2 w-full shrink-0 md:items-stretch md:flex">
+        <div class="count-box" data-aos="fade-up" data-aos-delay="200">
+          <Icon class="icon" name="bi:journal-richtext" />
+          <span class="counter">85</span>
+          <p><strong>Campaigns</strong></p>
+        </div>
+      </div>
+      <div class="md:w-1/2 w-full shrink-0 md:items-stretch md:flex">
+        <div class="count-box" data-aos="fade-up" data-aos-delay="300">
+          <Icon class="icon" name="bi:clock" />
+          <span class="counter">14081</span>
+          <p><strong>Watch Hours</strong>(Asia)</p>
+        </div>
+      </div>
+      <div class="md:w-1/2 w-full shrink-0 md:items-stretch md:flex">
+        <div class="count-box" data-aos="fade-up" data-aos-delay="400">
+          <Icon class="icon" name="bi:globe" />
+          <span class="counter">17</span>
+          <p><strong>Excellent CTR %</strong>(Asia)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .count-box {
+    padding: 20px 0;
+    width: 100%;
+    span {
+      font-size: 36px;
+      line-height: 30px;
+      display: block;
+      font-weight: 700;
+      color: #222222;
+      margin-left: 50px;
+      font-family: "Open Sans", sans-serif;
+    }
+    strong {
+      font-size: 14px;
+      color: #484848;
+    }
+    p {
+      padding: 15px 0 0 0;
+      margin: 0 0 0 50px;
+      font-family: "Raleway", sans-serif;
+      font-size: 14px;
+      color: #484848;
+    }
+  }
+  .icon {
+    width: 36px;
+    height: 36px;
+    font-size: 36px;
+    color: #14279b;
+    display: block;
+    float: left;
+    line-height: 0;
+  }
+</style>

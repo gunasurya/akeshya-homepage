@@ -1,0 +1,181 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<section class="features py-14">
+  <div class="section-title text-center" data-aos="fade-up">
+    <h2>Our Core Features</h2>
+    <p>
+      Akeshya is a forward-thinking and intelligent design firm that is
+      technically and creatively capable of transforming your brand into its
+      best digital self. Our approach to design and development results in
+      compelling, engaging branding and immersive digital experiences that
+      provide a value for money.
+    </p>
+  </div>
+  <div class="flex flex-wrap" data-aos="fade-up" data-aos-delay="300">
+    <div class="lg:w-1/4 p-2 md:w-1/3 w-full shrink-0">
+      <div class="icon-box">
+        <Icon
+          class="custom-icon"
+          name="ri:window-line"
+          style="color: #ffbb2c;"
+        />
+        <h3><a href="#">Web design</a></h3>
+      </div>
+    </div>
+    <div class="lg:w-1/4 p-2 md:w-1/3 w-full shrink-0">
+      <div class="icon-box">
+        <Icon
+          class="custom-icon"
+          name="ri:code-box-line"
+          style="color: #5578ff;"
+        />
+        <h3><a href="#">Development</a></h3>
+      </div>
+    </div>
+    <div class="lg:w-1/4 p-2 md:w-1/3 w-full shrink-0">
+      <div class="icon-box">
+        <Icon
+          class="custom-icon"
+          name="ri:creative-commons-by-line"
+          style="color: #e80368;"
+        />
+        <h3><a href="#">Branding</a></h3>
+      </div>
+    </div>
+    <div class="lg:w-1/4 p-2 md:w-1/3 w-full shrink-0">
+      <div class="icon-box">
+        <Icon
+          class="custom-icon"
+          name="ri:play-circle-line"
+          style="color: #e361ff;"
+        />
+        <h3><a href="#">Media buying</a></h3>
+      </div>
+    </div>
+    <div class="lg:w-1/4 p-2 md:w-1/3 w-full shrink-0">
+      <div class="icon-box">
+        <Icon
+          class="custom-icon"
+          name="ri:search-eye-line"
+          style="color: #47aeff;"
+        />
+        <h3><a href="#">Search engine</a></h3>
+      </div>
+    </div>
+    <div class="lg:w-1/4 p-2 md:w-1/3 w-full shrink-0">
+      <div class="icon-box">
+        <Icon class="custom-icon" name="ri:todo-line" style="color: #ffa76e;" />
+        <h3><a href="#">Brand startegy</a></h3>
+      </div>
+    </div>
+    <div class="lg:w-1/4 p-2 md:w-1/3 w-full shrink-0">
+      <div class="icon-box">
+        <Icon
+          class="custom-icon"
+          name="ri:map-pin-line"
+          style="color: #dbce11;"
+        />
+        <h3><a href="#">Local search marketing</a></h3>
+      </div>
+    </div>
+    <div class="lg:w-1/4 p-2 md:w-1/3 w-full shrink-0">
+      <div class="icon-box">
+        <Icon
+          class="custom-icon"
+          name="ri:bar-chart-grouped-line"
+          style="color: #4233ff;"
+        />
+        <h3><a href="#">Lead tracking & Management</a></h3>
+      </div>
+    </div>
+    <div class="lg:w-1/4 p-2 md:w-1/3 w-full shrink-0">
+      <div class="icon-box">
+        <Icon
+          class="custom-icon"
+          name="ri:contacts-book-line"
+          style="color: #b2904f;"
+        />
+        <h3><a href="#">Contact management</a></h3>
+      </div>
+    </div>
+    <div class="lg:w-1/4 p-2 md:w-1/3 w-full shrink-0">
+      <div class="icon-box">
+        <Icon class="custom-icon" name="ri:disc-line" style="color: #b20969;" />
+        <h3><a href="#">Media management</a></h3>
+      </div>
+    </div>
+    <div class="lg:w-1/4 p-2 md:w-1/3 w-full shrink-0">
+      <div class="icon-box">
+        <Icon
+          class="custom-icon"
+          name="ri:calendar-event-line"
+          style="color: #ff5828;"
+        />
+        <h3><a href="#">Social scheduling</a></h3>
+      </div>
+    </div>
+    <div class="lg:w-1/4 p-2 md:w-1/3 w-full shrink-0">
+      <div class="icon-box">
+        <Icon
+          class="custom-icon"
+          name="ri:advertisement-fill"
+          style="color: #29cc61;"
+        />
+        <h3><a href="#">Ad retargeting</a></h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-title {
+    padding-bottom: 30px;
+  }
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    color: #222222;
+    margin-bottom: 10px;
+  }
+  .section-title h2::before,
+  .section-title h2::after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: #14279b;
+    display: inline-block;
+  }
+  .section-title h2::before {
+    margin: 0 15px 10px 0;
+  }
+
+  .section-title h2::after {
+    margin: 0 0 10px 15px;
+  }
+  .section-title p {
+    color: #444444;
+  }
+  .custom-icon {
+    font-size: 32px;
+    line-height: 1;
+  }
+  .features .icon-box {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: #f6f6f6;
+    gap: 10px;
+    transition: ease-in-out 0.3s;
+  }
+  .features .icon-box h3 {
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-size: 16px;
+  }
+</style>

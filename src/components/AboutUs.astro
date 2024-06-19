@@ -1,0 +1,117 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<section id="about" data-aos="fade-up" class="about-us scroll-mt-5 overflow-hidden py-14">
+  <div class="section-title text-center">
+    <h2>About Us</h2>
+  </div>
+  <div class="flex flex-wrap content">
+    <div class="lg:w-3/6 w-full px-3" data-aos="fade-up" data-aos-delay="150">
+      <p>
+        We are Akeshya, a firm that specializes in web design and marketing. We
+        help transform ideas into reality with a team of passionate graphic
+        designers, web developers, and seasoned marketing advisors.
+      </p>
+      <ul>
+        <li>
+          <Icon class="check" name="ri:check-double-line" /> We started with a simple
+          idea: do what is best for the client.
+        </li>
+        <li>
+          <Icon class="check" name="ri:check-double-line" /> Our methodical and individual
+          approach to each project delivers the finest possible results for your
+          media.
+        </li>
+        <li>
+          <Icon class="check" name="ri:check-double-line" /> Our day-to-day work
+          is to solve your problems utilising the most up-to-date, practical adaptive
+          technology, and we have a lot of fun doing it.
+        </li>
+      </ul>
+    </div>
+    <div class="lg:w-3/6 w-full px-3 content" data-aos="fade-up" data-aos-delay="300">
+      <p>
+        We're professional, but we're also friendly, and we'll always pay
+        attention to your concerns. We expect to work with innovative people
+        that have an open mind and are dedicated to making every idea a reality.
+        We want to hear from you if you're interested in SEO, have Web
+        Development ideas, or require a graphic designer who can match your
+        goals.
+      </p>
+      <a href="#services" class="btn-learn-more">Learn More</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-title {
+    padding-bottom: 30px;
+  }
+
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    color: #222222;
+    margin-bottom: 10px;
+  }
+
+  .section-title h2::before,
+  .section-title h2::after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: #14279b;
+    display: inline-block;
+  }
+
+  .section-title h2::before {
+    margin: 0 15px 10px 0;
+  }
+
+  .section-title h2::after {
+    margin: 0 0 10px 15px;
+  }
+  .about-us .content ul .check {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 20px;
+    color: #14279b;
+    line-height: 1;
+  }
+  .about-us .content ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    padding-left: 28px;
+  }
+
+  .content {
+    font-size: 16px;
+    color: #444444;
+    p {
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+  }
+  .about-us .content ul li + li {
+    margin-top: 10px;
+  }
+  .about-us .content .btn-learn-more {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 50px;
+    line-height: 1;
+    color: #14279b;
+    margin-top: 6px;
+    border: 2px solid #14279b;
+}
+</style>

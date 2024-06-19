@@ -1,0 +1,76 @@
+<section id="hero" class="hero scroll-mt-5 flex flex-wrap pt-24">
+  <div
+    class="flex order-2 lg:order-1 flex-col justify-center lg:w-1/2 w-full mb-4 lg:mb-0"
+  >
+    <div>
+      <h1 data-aos="fade-up" class="hero-caption mb-2.5">Grow your business with Akeshya</h1>
+      <h2 data-aos="fade-up" data-aos-delay="400" class="hero-description">
+        We are a team of talented website designers, developers & digital
+        marketers.
+      </h2>
+      <a data-aos="fade-up" data-aos-delay="800" href="#contact" class="btn-get-started">Get Started</a>
+    </div>
+  </div>
+  <div class="lg:w-1/2 order-1 lg:order-2 w-full lg:flex lg:justify-center" data-aos="fade-left" data-aos-delay="200">
+    <img
+      class="animated max-w-full h-auto"
+      src="/src/content/posts/images/hero-img.png"
+      alt="Illustration"
+    />
+  </div>
+</section>
+
+<style>
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+    .hero h2 {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+  }
+  .hero-caption {
+    font-size: 48px;
+    line-height: 56px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700 !important;
+    color: #14279b;
+  }
+  .hero-description {
+    font-size: 24px;
+    font-family: "Raleway", sans-serif;
+    line-height: 29px;
+    font-weight: 500 !important;
+    margin-bottom: 50px;
+  }
+  .btn-get-started {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #14279b;
+    border: 2px solid #14279b;
+  }
+  @keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .hero .animated {
+    animation: moveUpDown 4s ease-in-out infinite alternate-reverse both;
+  }
+</style>

@@ -1,0 +1,85 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<footer class="footer">
+  <div
+    class="max-w-7xl justify-between items-center align- items-center mx-auto max-sm:px-5 max-sm:py-10 w-full"
+  >
+    <div class="flex justify-between">
+      <div class="Copyright">
+        © Copyright <strong>Akeshya</strong>. All Rights Reserved
+      </div>
+      <div>
+        <ul class="flex list-unstyled">
+          <li class="px-3">
+            <a href="./Terms and conditions.pdf">Terms and conditions</a>
+          </li>
+          <li class="px-3"><a href="./Refund policy.pdf">Refund policy</a></li>
+          <li class="px-3">
+            <a href="./Privacy policy.pdf">Privacy policy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<a
+  href="#"
+  id="back-to-top-btn"
+  class="back-to-top flex items-center justify-center active"
+  ><Icon class="custom-icon" name="bi:arrow-up-short" />
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const backToTopBtn = document.getElementById(
+        "back-to-top-btn"
+      ) as HTMLAnchorElement;
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 0) {
+          backToTopBtn.classList.add("active");
+        } else {
+          backToTopBtn.classList.remove("active");
+        }
+      });
+    });
+  </script>
+  <style>
+    .custom-icon {
+      font-size: 28px;
+      color: #fff;
+    }
+    .back-to-top.active {
+      visibility: visible;
+      opacity: 1;
+    }
+    .back-to-top:hover {
+      opacity: 0.8;
+    }
+    .back-to-top {
+      position: fixed;
+      visibility: hidden;
+      opacity: 0;
+      right: 15px;
+      bottom: 15px;
+      z-index: 996;
+      background: #14279b;
+      width: 40px;
+      height: 40px;
+      border-radius: 4px;
+      transition: all 0.4s;
+    }
+    .footer {
+      background: #fff;
+      box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+      padding: 30px 0;
+      color: #222222;
+      font-size: 14px;
+    }
+
+    .list-unstyled a {
+      color: #14279b;
+      text-decoration: none;
+    }
+  </style>
+</a>
